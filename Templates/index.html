@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>More Recipes</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/index.css">
+</head>
+<body>
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <header class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">More Recipes</h3>
+                    <nav class="nav nav-masthead">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </nav>
+                </div>
+            </header>
+
+            <main role="main" class="inner cover">
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="list-inline-item">
+                            <a href="#" class="js-sign-in">Sign In</a>
+                        </li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item">
+                            <a href="#" class="js-sign-up">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <form class="js-sign-in-form" method="post" action="recipes.html">
+                        <h1>Sign In</h1>
+                        <div class="form-group">
+                            <input class="form-control-lg" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control-lg" placeholder="Password">
+                        </div>
+                        <button class="btn btn-lg btn-secondary">Sign In</button>
+                    </form>
+
+                    <form class="js-sign-up-form" method="post" action="recipes.html">
+                        <h1>Sign Up</h1>
+                        <div class="form-group">
+                            <input class="form-control-lg" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control-lg" placeholder="Surname">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-lg" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control-lg" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control-lg" placeholder="Repeat Password">
+                        </div>
+                        <button class="btn btn-lg btn-secondary">Sign Up</button>
+                    </form>
+                </div>
+            </main>
+
+            <footer class="mastfoot">
+                <div class="inner">
+                    <p>LifeandJoy Applications</p>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/javascripts/jquery-3.2.1.min.js"></script>
+<script src="assets/javascripts/popper.min.js"></script>
+<script src="assets/javascripts/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.js-sign-up-form').hide();
+
+        $('.js-sign-in').click(function (event) {
+            event.preventDefault();
+            $('.js-sign-up-form').hide(100, function () {
+                $('.js-sign-in-form').show(100);
+            });
+        });
+
+        $('.js-sign-up').click(function (event) {
+            event.preventDefault();
+            $('.js-sign-in-form').hide(100, function () {
+                $('.js-sign-up-form').show(100);
+            });
+        });
+    });
+</script>
+</body>
+</html>
