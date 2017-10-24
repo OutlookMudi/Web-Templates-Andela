@@ -77,7 +77,7 @@
 
             <footer class="mastfoot">
                 <div class="inner">
-                    <p>LifeandJoy Applications</p>
+                    <p>More Recipees</p>
                 </div>
             </footer>
 
@@ -95,12 +95,14 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.js-sign-up-form').hide();
+
         $('.js-sign-in').click(function (event) {
             event.preventDefault();
             $('.js-sign-up-form').hide(100, function () {
                 $('.js-sign-in-form').show(100);
             });
         });
+
         $('.js-sign-up').click(function (event) {
             event.preventDefault();
             $('.js-sign-in-form').hide(100, function () {
