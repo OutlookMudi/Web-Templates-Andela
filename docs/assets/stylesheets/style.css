@@ -1,0 +1,72 @@
+body {
+    padding-top: 5rem;
+}
+
+.album {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f7f7f7;
+}
+
+.card {
+    float: left;
+    /*width: 50%;*/
+    overflow: hidden;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
+
+.card > a > img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: .75rem;
+}
+
+.popular .card > a > img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: .75rem;
+}
+
+.card-text {
+    font-size: 85%;
+}
+
+.card > a > p {
+    color: #868e96;
+}
+
+.card > a:hover {
+    text-decoration: none;
+}
+
+.details img {
+    width: 100%;
+    margin-bottom: .75rem;
+}
+
+.reviews-comments {
+    padding-top: 0.5rem;
+}
+
+.reviews-comments p span {
+    padding-right: 0.50rem;
+}
+
+.reviews-comments p span a {
+    text-decoration: none;
+}
+
+.reviews .img-circle {
+    width: 70px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid lightgrey;
+}
