@@ -1,0 +1,13 @@
+body
+{
+	background-color:darkgreen;
+	color: #fff;
+}
+#main-footer
+{
+	background-color: black;
+}
+
+.fa, .upvote{
+	background-color:black;
+}

@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- Add recipe modal -->
@@ -136,36 +135,38 @@
     </div>
 </div>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="recipes.html">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="recipes.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">Welcome, User</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="my_recipes.html">My Recipes</a>
-                    <a class="dropdown-item" href="favorite.html">Favorite</a>
-                    <a class="dropdown-item" href="profile.html">Profile</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Logout <i class="fa fa-sign-out"></i> </a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+    <img src="carous1.jpg" alt="Logo" style="width:40px;">
+  </a>
+  <a class="navbar-brand" href="#">More Recipes</a>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="recipies.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="recipies.html">Browse Recipe</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="recipies.html">Signout</a>
+      </li>       
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+     
+        </li>       
+    </ul>
+  </div>      
 </nav>
 
 <main role="main" class="container">
@@ -431,38 +432,31 @@
                             </td>
                         </tr>
                         </tbody>
-                    </table>
-
-                    <nav aria-label="Page navigation example" class="pull-right">
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-double-left"></i>
-                            </a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-double-right"></i>
-                            </a></li>
-                        </ul>
-                    </nav>
+                    </table>                    
                 </div>
-
-
             </div>
-
         </div>
     </div>
 
 </main><!-- /.container -->
 
-<footer class="text-muted">
-    <div class="container">
-        <p align="center">More Recipe</p>
-    </div>
-</footer>
-
+<!-- MAIN FOOTER -->
+    <footer id="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="py-4">
+              <h1 class="h3">More Recipe</h1>
+              <p>Copyright &copy; 2017</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 <script src="assets/javascripts/jquery-3.2.1.min.js"></script>
 <script src="assets/javascripts/popper.min.js"></script>
 <script src="assets/javascripts/bootstrap.min.js"></script>
-<script src="assets/javascripts/scripts.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>
